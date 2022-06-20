@@ -1,13 +1,13 @@
 /* Base */
 
-@import './base/normalize';
-@import './base/fonts';
+@import './base/global';
 
 /* Components */
 
+@import './components/logo';
+@import './components/button';
 @import './components/header';
 @import './components/hero';
-@import './components/logo';
 
 /* Utils */
 

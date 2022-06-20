@@ -1,14 +1,18 @@
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
 h1,
 h2,
 h3 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     letter-spacing: 0.03em;
     margin: 0;
 }
 
 h1 {
+    color: var(--third-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -27,4 +31,22 @@ h3 {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+a {
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
 }
