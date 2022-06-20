@@ -1,1 +1,158 @@
-/*# sourceMappingURL=main.css.map */
+/* Base */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Components */
+.header {
+  display: flex;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.page-header {
+  display: flex;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 24px 15px 25px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+.nav__links {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.nav__elem:not(:last-child) {
+  margin-right: 50px;
+}
+.nav__link {
+  color: var(--primary-text-color);
+}
+.nav__link:hover, .nav__link:focus {
+  color: var(--accent-color);
+}
+.nav__link--current {
+  position: relative;
+  color: var(--accent-color);
+}
+.nav__link--current::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  left: 0;
+  bottom: -33.2px;
+  background-color: var(--accent-color);
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.contacts__item {
+  display: flex;
+  color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
+  margin-left: 30px;
+  align-items: center;
+}
+.contacts__item:hover, .contacts__item:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.contacts__item-icon {
+  margin-right: 10px;
+}
+
+.hero {
+  background-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-back-hero.jpg");
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  padding: 200px 0px;
+  margin: 0 auto;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  color: var(--primary-text-color);
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  font-style: normal;
+  margin-right: 93px;
+  padding: 0px;
+}
+.logo__elem--color {
+  color: var(--accent-color);
+}
+
+/* Utils */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196F3;
+  --background-color: #FFFFFF;
+  --background-2-color: #2F303A;
+}/*# sourceMappingURL=main.css.map */
