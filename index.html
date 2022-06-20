@@ -379,54 +379,54 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <p>Оставьте свои данные, мы вам перезвоним</p>
-            <form class="flex">
-                <label>
-                    <span class="label-text">Имя</span>
-                    <div>
-                        <input class="name" type="text" name="text" placeholder=""/>
-                        <svg class="modal-ico" width="12px" height="12px">
+    <div class="backdrop backdrop--is-hidden" data-modal>
+        <div class="backdrop__modal">
+            <p class="backdrop__main-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="backdrop__form">
+                <label class="backdrop__form-item">
+                    <span class="backdrop__label-text">Имя</span>
+                    <div class="backdrop__form-field">
+                        <input class="backdrop__input" type="text" name="text" placeholder=""/>
+                        <svg class="backdrop__modal-ico" width="12px" height="12px">
                             <use href="./images/symbol-defs.svg#icon-data-user"></use>
                         </svg>
                     </div>
                 </label>
-                <label>
-                    <span class="label-text">Телефон</span>
-                    <div>
-                        <input class="phone" type="phone" name="phone" placeholder=""/>
-                        <svg class="modal-ico" width="13px" height="13px">
+                <label class="backdrop__form-item">
+                    <span class="backdrop__label-text">Телефон</span>
+                    <div class="backdrop__form-field">
+                        <input class="backdrop__input" type="phone" name="phone" placeholder=""/>
+                        <svg class="backdrop__modal-ico" width="13px" height="13px">
                             <use href="./images/symbol-defs.svg#icon-data-phone"></use>
                         </svg>
                     </div>
                 </label>
-                <label>
-                    <span class="label-text">Почта</span>
-                    <div>
-                        <input class="email" type="email" name="email" placeholder=""/>
-                        <svg class="modal-ico" width="15px" height="12px">
+                <label class="backdrop__form-item">
+                    <span class="backdrop__label-text">Почта</span>
+                    <div class="backdrop__form-field">
+                        <input class="backdrop__input" type="email" name="email" placeholder=""/>
+                        <svg class="backdrop__modal-ico" width="15px" height="12px">
                             <use href="./images/symbol-defs.svg#icon-data-email"></use>
                         </svg>
                     </div>
                 </label>
-                <label>
-                    <span class="label-text">Комментарий</span>
-                    <textarea class="comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
+                <label class="backdrop__form-item">
+                    <span class="backdrop__label-text">Комментарий</span>
+                    <textarea class="backdrop__comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
                 </label>
-                <label class="user-agr">
-                    <input class="checkbox" type="checkbox" name="hobby" value="reading"/>
-                    <svg class="no-display" width="16px" height="15px">
+                <label class="backdrop__user-agr">
+                    <input class="backdrop__checkbox" type="checkbox" name="hobby" value="reading"/>
+                    <span class="backdrop__checkbox-icon-0"></span>
+                    <svg class="backdrop__checkbox-icon-1" width="16px" height="15px">
                         <use href="./images/symbol-defs.svg#icon-checkbox-full"></use>
                     </svg>
-                    <span class="icon0"></span>
-                    <span class="user-agr-text">Соглашаюсь с рассылкой и принимаю <span>
-                    <a href="" class="user-agr-link">Условия договора</a></span></span>
+                    <span class="backdrop__user-agr-text">Соглашаюсь с рассылкой и принимаю <span>
+                    <a href="" class="backdrop__user-agr-link">Условия договора</a></span></span>
                 </label>
-                <button class="button form-2" type="submit">Отправить</button>
+                <button class="button-type-2 backdrop__button" type="submit">Отправить</button>
             </form>
-            <button class="btn-modal flex" type="button" name="close-form" data-modal-close>
-                <svg width="11px" height="11px">
+            <button class="backdrop__btn-modal" type="button" name="close-form" data-modal-close>
+                <svg class="backdrop__icon-close" width="11px" height="11px">
                     <use href="./images/symbol-defs.svg#icon-modal-close"></use>
                 </svg>
             </button>

@@ -124,4 +124,13 @@
         line-height: 1.875;
         letter-spacing: 0.06em;
     }
+
+    &__button:hover {
+        background-color: var(--accent-2-color);
+    }
+
+    &__button-title {
+        margin: 0;
+        margin-right: 10px;
+    }
 }
