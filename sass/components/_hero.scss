@@ -30,6 +30,6 @@
     }
 
     &__button:hover, &__button:focus {
-        background-color: #188CE8;
+        background-color: var(--accent-2-color);
     }
 }

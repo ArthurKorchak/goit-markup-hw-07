@@ -39,6 +39,10 @@ ul {
   padding: 0;
 }
 
+.section {
+  padding: 94px 0px;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -94,11 +98,10 @@ a {
 
 .button.form:hover,
 .button.form:focus {
-  background-color: #188CE8;
+  background-color: var(--accent-2-color);
 }
 
 .header {
-  display: flex;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -195,7 +198,40 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero__button:hover, .hero__button:focus {
-  background-color: #188CE8;
+  background-color: var(--accent-2-color);
+}
+
+.benefits__main-title {
+  display: none;
+}
+.benefits__list {
+  display: flex;
+  align-items: center;
+  grid-gap: 30px;
+}
+.benefits__item {
+  width: 270px;
+}
+.benefits__icon {
+  display: flex;
+  background-color: #F5F4FA;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.benefits__title {
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+.benefits__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin: 0;
 }
 
 /* Utils */
@@ -204,6 +240,7 @@ a {
   --secondary-text-color: #757575;
   --third-text-color: #FFFFFF;
   --accent-color: #2196F3;
+  --accent-2-color: #188CE8;
   --background-color: #FFFFFF;
   --background-2-color: #2F303A;
 }/*# sourceMappingURL=main.css.map */
