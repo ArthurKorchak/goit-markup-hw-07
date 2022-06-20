@@ -356,6 +356,111 @@ a {
   border: 1px solid var(--accent-color);
 }
 
+.footer {
+  background-color: var(--background-2-color);
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  padding: 60px 0px;
+}
+.footer__nav-logo {
+  display: block;
+  color: var(--third-text-color);
+  margin: 0;
+  margin-bottom: 20px;
+}
+.footer__address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer__nav-contacts {
+  margin: 0;
+}
+.footer__nav-contact {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__nav-contact:not(:first-child) {
+  margin: 9px 0 0 0;
+}
+.footer__nav-link {
+  color: var(--third-text-color);
+}
+.footer__nav-mail, .footer__nav-phone {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__nav-link:hover, .footer__nav-link:focus, .footer__nav-mail:hover, .footer__nav-mail:focus, .footer__nav-phone:hover, .footer__nav-phone:focus {
+  color: var(--accent-color);
+}
+
+.invite-block {
+  padding: 12px 0px 40px 0px;
+  margin-left: 70px;
+}
+.invite-block__main-title {
+  color: var(--third-text-color);
+  margin-bottom: 20px;
+}
+.invite-block__social-list {
+  padding: 0;
+  margin: 0;
+}
+
+.subscribe {
+  padding: 12px 0px 40px 0px;
+  margin-left: 93px;
+}
+.subscribe__lable {
+  color: var(--third-text-color);
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0px 0px 20px 0px;
+}
+.subscribe__form {
+  display: flex;
+}
+.subscribe__input {
+  min-width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  background-color: var(--background-2-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe__input:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+.subscribe__button {
+  display: flex;
+  margin-left: 12px;
+  height: 50px;
+  min-width: 200px;
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+}
+
 /* Utils */
 :root {
   --primary-text-color: #212121;
